@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: lakeside, sans-serif;
+    font-weight: 500;
+    color: #5a3c32;
+    font-style: normal;
+    font-size: 3.5em;
+
+}
+
+.bigphoto {
+    background-image: url(../images/baggrundsbillede-mobil.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.fa-bars {
+    color: white;
+
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #ddcfba;
+    color: #5a3c32;
+}
+
+.logo {
+    height: 120px;
+}
+
+.logo_typeface {
+    max-height: 100px;
+    width: 60%;
+    margin-left: 10px;
+}
+
+.burger {
+    height: 40px;
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.laptop-menu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #5a3c32;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menuentry {
+    border-bottom: solid 1px #5a3c32;
+    text-align: center;
+    padding-top: 5px color: #5a3c32;
+
+
+
+}
+
+.menuentry-black a {
+    color: #5a3c32;
+}
+
+.menuentry-white a {
+    color: #5a3c32;
+}
+
+.menuentry a {
+    font-family: lakeside, sans-serif;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #5a3c32;
+}
+
+
+/* Main content */
+main {
+    margin: 0 5px 0 5px;
+
+}
+
+/*Forside*/
+#total5 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/*Katten*/
+
+
+#galleri-kat{
+width:100%;
+margin-bottom: 40 px}
+
+
+/*Produkter*/
+
+.accordion {
+    background-color: #ddcfba;
+    color: #5a3c32;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #5a3c32;
+    text-align: left;
+    position: relative;
+    outline: none;
+    font-size: 2em;
+    transition: 0.4s;
+    font-family: lakeside, sans-serif;
+
+
+}
+#expanded-info {
+    display: none;
+}
+
+
+
+
+.accordion-container h2 {
+    margin: 20px 0;
+
+}
+
+.bullet-list {
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-bottom: 30px
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #ddcfba;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+
+}
+
+.space {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+/*Om*/
+
+/* footer content */
+
+footer {
+    background-color: #a77c6d;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+
+
+}
+
+.tekst-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    font-family: lakeside, sans-serif;
+    font-size: 2.5em;
+
+}
+
+.ikon-footer {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    /* Header */
+    .bigphoto {
+        background-image: url(../images/baggrundsbillede-desktop.jpg);
+    }
+
+    #menu-toggle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menuentry {
+        display: inline;
+        border: none;
+    }
+
+    .menu {
+        margin-top: 60px;
+    }
+
+    .menuentry a {
+        margin: 60px;
+
+        font-size: 3.5em;
+    }
+
+    .last-menuentry {
+        margin-right: 30px;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .laptop-menu {
+        display: inline;
+
+    }
+
+    .laptop_logo {
+        height: 175px;
+        margin: 4px 0 0 40px;
+    }
+
+    .laptop_logo_typeface {
+        height: 60px;
+        margin-left: 10px;
+        margin-top: 30px
+    }
+
+    /* Main */
+    .forsideindhold {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .tekstindhold {
+        width: 40%;
+
+    }
+
+    .total5 {
+        width: 40%;
+    }
+
+    #total5 {
+        width: 100%;
+    }
+
+    
+    /* Produkter */
+#produkter-wrapper h1 {
+    position: relative;
+    left: 11.2%;
+    margin-top: 20px;
+    width: 30%;
+}
+
+    .accordion-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    
+    .accordion-full {
+        width: 25%;
+    }
+
+
+
+    /* Katten */
+    .katten {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+   .artikel-katten {
+    width: 40%;
+}
+
+.galleri {
+    width: 40%;
+}
+    .galleri-kat{
+        width:100%
+    }
+
+
+
+
+
+
+
+
+/*Om*/
+     .om-perfect {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .forhandlere {
+        width: 40%;
+
+    }
+
+    .om-perfect-fit {
+        width: 40%;
+    }
+
+   
+
+
+
+/* Footer */
+.tekst-footer {
+    font-size: 2.5em;
+}

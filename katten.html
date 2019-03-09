@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Perfekt Fit | Katten </title>
+    <meta name="description" content="Artikler om kattens sundhed, signaler og galleri af katte fra brugere">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jkp7dmh.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <div class="logo_container"><img src="images/logo.gif" alt="logo" class="logo">
+                </div>
+            </a>
+            <div class="burger-container"><i onclick="menuToggle()"><img class="burger" src="images/burger.png" alt="burger"></i></div>
+        </div>
+        <nav id="menu-toggle">
+            <div class="laptop-menu">
+                <a href="index.html">
+                    <div class="logo_container"><img src="images/logo.gif" alt="logo" class="laptop_logo">
+                    </div>
+                </a>
+            </div>
+            <ul class="menu">
+                <li class="menuentry menuentry-white"><a href="katten.html">Katten</a></li>
+                <li class="menuentry menuentry-white"><a href="produkter.html">Produkter</a></li>
+                <li class="menuentry menuentry-white last-menuentry"><a href="om.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="katten">
+        <section class="artikel-katten">
+            <h1>Kattens siganaler med halen</h1>
+            <p>Kattens hale er vigtigt for katten. Katten bruger halen til at holde balance med, når den klatrer eller løber, men den bruger også halen til at kommunikere med. Alt efter halens position og bevægelse kan du aflæse kattens kropssprog og humør. <br>
+                - Når halen er lige op, og halespidsen er bøjet yderst, er katten nysgerrig<br>
+                - Hvis halen er lige op, men uden bøjning vil katten hilse og indbyder og tillader at man snakker med den. Ofte vil den gnide sig op ad en<br>
+                - En tyk og fyldig hale kan være fordi katten er bange eller kan finde på at angribe<br>
+                - Hvis en kat smasker eller gaber eller slikker sig om munden, fortæller den, at den er venlig og hvis katten misser med øjnene, føler den sig sikker og godt tilpas hos dig<br>
+                - Når halen svinger fra side til side, har katten sikker fået øje på et jagtbytte<br>
+                - Katten løfter bagdelen, holder halen nede og står med siden til en anden kat, når den er aggressiv<br>
+                - En glad og tilfreds kat har høj- og sitrende haleføring eller halen er afslappet bagud<br><br>
+                Det er ikke nok kun at se på halen, når man skal bedømme, hvad en kat signalerer til sine omgivelser, men det er en vigtig del helheden.
+
+            </p><br>
+            
+        </section>
+        <aside class="galleri">
+           <h1>Galleri</h1>
+        
+                   <img id="galleri-kat" src="images/kat-leger.jpg" alt="Kat leger">
+            
+            <img id="galleri-kat" src="images/kat-aftensol.jpg" alt="Kat i aftensol">
+            <img id="galleri-kat" src="images/kat-busk.jpg" alt="Kat i en busk">
+            
+            <img id="galleri-kat" src="images/kat-fjoller.jpg" alt="Kat fjoller">
+            <img id="galleri-kat" src="images/kat-grass.jpg" alt="Kat i græsset">
+            <img id="galleri-kat" src="images/kat-i-have.jpg" alt="Kat i have">
+                    
+        </aside>
+    </main>
+ <footer>
+        <img class="ikon-footer" src="images/facebook-ikon.png" alt="Facebook">
+        <img class="ikon-footer" src="images/instagram-ikon.png" alt="Instagram">
+        <p class="tekst-footer">Kontakt</p>
+        <p class="tekst-footer">Kontaktoplysninger</p>
+        <img class="ikon-footer" src="images/webshop-ikon.png" alt="Webshop">
+    </footer>
+
+    <script>
+        function menuToggle() {
+            var x = document.getElementById("menu-toggle");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
