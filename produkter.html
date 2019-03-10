@@ -21,7 +21,7 @@
                 <div class="logo_container"><img src="images/logo.gif" alt="logo" class="logo">
                 </div>
             </a>
-            <div class="burger-container"><i onclick="menuToggle()"><img class="burger" src="images/burger.png"></i></div>
+            <div class="burger-container"><i onclick="menuToggle()"><img class="burger" src="images/burger.png" alt="Burger"></i></div>
         </div>
         <nav id="menu-toggle">
             <div class="laptop-menu">
@@ -31,16 +31,19 @@
                 </a>
             </div>
             <ul class="menu">
-                <li class="menuentry menuentry-white"><a href="katten.html">Katten</a></li>
-                <li class="menuentry menuentry-white"><a href="produkter.html">Produkter</a></li>
-                <li class="menuentry menuentry-white last-menuentry"><a href="om.html">Om</a></li>
+                <li class="menuentry"><a href="katten.html">Katten</a></li>
+                <li class="menuentry"><a href="produkter.html">Produkter</a></li>
+                <li class="menuentry"><a href="om.html">Om</a></li>
             </ul>
         </nav>
     </header>
     <main id="produkter-wrapper">
          <section class="accordion-container">
-                <section class="accordion-full"><h1>Perfect Fit Junior 1&lt; år med kylling </h1> 
-                    <img src="images/foder-junior.png" alt="Perfect Fit -Sensitive 1+">
+                <section class="accordion-junior">
+                   <h1>Perfect Fit Junior 1&lt; år med kylling </h1> 
+                    <img src="images/foder-junior.png" alt="Perfect Fit -Sensitive 1+" class="produktpic">
+                    
+                   
                     <button class="accordion">Produktbeskrivelse<span class="space"> <i class="fa fa-caret-down"></i></span></button>
                     <div class="panel">
                         <p>For at sikre kattekillinger en sund vækst så de får styrket deres udvikling af naturlige instinkter har de brug for et tilpasset foder til killinger med alle vigtige næringsstoffer og vitaminer. <br>
@@ -83,12 +86,13 @@ Sørg for rent drikkevand til rådighed hele døgnet.
                     <div class="panel">
                         <p>Endnu ingen anmeldelser på Perfect Fit Junior under 1 år med kylling/p>
                     </div>
+                    
 
                 </section>
                 
-                <aside class="accordion-full">
+                <aside class="accordion-sensitive">
                    <h1>Perfect Fit Sensitive 1+ med kalkun</h1>
-                    <img src="images/foder-sensitive.png" alt="Perfect Fit -Sensitive 1+">
+                    <img src="images/foder-sensitive.png" alt="Perfect Fit -Sensitive 1+" class="produktpic">
                     <button class="accordion">Produktbeskrivelse<span class="space"> <i class="fa fa-caret-down"></i></span></button>
                     <div class="panel">
                         <p>Mange katte reagerer sensibelt på bestemte bestanddele i ernæringen. Det kan skyldes, at kattens mave- og tarmsystem er overfølsomt, eller at katten har et svagt immunsystem. Disse katte har brug for et velafbalanceret og letfordøjeligt foder. <br>
@@ -140,10 +144,14 @@ Sørg for rent drikkevand til rådighed hele døgnet.
     <footer>
         <img class="ikon-footer" src="images/facebook-ikon.png" alt="Facebook">
         <img class="ikon-footer" src="images/instagram-ikon.png" alt="Instagram">
+        <div>
         <p class="tekst-footer">Kontakt</p>
-        <p class="tekst-footer">Kontaktoplysninger</p>
+        <p class="tekst-footer">Handelsbetingelser</p>
+        </div>
         <img class="ikon-footer" src="images/webshop-ikon.png" alt="Webshop">
     </footer>
+    
+    <!--Nedenstående script er lånt fra mobilefirst-->
 
     <script>
         var acc = document.getElementsByClassName("accordion");

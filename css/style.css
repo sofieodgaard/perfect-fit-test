@@ -81,18 +81,9 @@ ul {
 .menuentry {
     border-bottom: solid 1px #5a3c32;
     text-align: center;
-    padding-top: 5px color: #5a3c32;
-
-
-
-}
-
-.menuentry-black a {
+    padding-top: 5px;
     color: #5a3c32;
-}
 
-.menuentry-white a {
-    color: #5a3c32;
 }
 
 .menuentry a {
@@ -103,6 +94,7 @@ ul {
 p {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #5a3c32;
+
 }
 
 
@@ -121,9 +113,10 @@ main {
 /*Katten*/
 
 
-#galleri-kat{
+.galleri-kat{
 width:100%;
-margin-bottom: 40 px}
+margin-bottom: 40px;
+}
 
 
 /*Produkter*/
@@ -186,29 +179,40 @@ margin-bottom: 40 px}
 footer {
     background-color: #a77c6d;
     display: flex;
-    justify-content: space-between;
     justify-content: space-around;
+    padding: 20px;
 
 
 }
 
-.tekst-footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 35px;
-    font-family: lakeside, sans-serif;
-    font-size: 2.5em;
 
-}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    
+    .produktpic{
+        width: 100%;
+    }
+    
+  }
+
+
 
 .ikon-footer {
-    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+        margin: 10px;
+    
+}.tekst-footer {
+    display: flex;
+   justify-content: space-around;    
+    
+    font-family: lakeside, sans-serif;
+    font-size: 2em;
+    
 }
-
-
-
-
-
 
 
 
@@ -243,11 +247,9 @@ footer {
 
         font-size: 3.5em;
     }
+    
 
-    .last-menuentry {
-        margin-right: 30px;
-    }
-
+    
     .burger-container {
         display: none;
     }
@@ -296,12 +298,14 @@ footer {
 
     
     /* Produkter */
-#produkter-wrapper h1 {
+
+    /#produkter-wrapper h1 {
     position: relative;
     left: 11.2%;
     margin-top: 20px;
-    width: 30%;
+    
 }
+    
 
     .accordion-container {
         display: flex;
@@ -311,8 +315,17 @@ footer {
     }
 
     
-    .accordion-full {
-        width: 25%;
+    .accordion-junior {
+       display: flex;
+    flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+    .accordion-sensitive {
+       display: flex;
+    flex-wrap: wrap;
+        justify-content: center;
+       
     }
 
 
@@ -331,9 +344,7 @@ footer {
 .galleri {
     width: 40%;
 }
-    .galleri-kat{
-        width:100%
-    }
+    
 
 
 
@@ -368,3 +379,13 @@ footer {
 .tekst-footer {
     font-size: 2.5em;
 }
+    .tekst-footer {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;    
+    
+    font-family: lakeside, sans-serif;
+    font-size: 2em;
+    
+}
+  
